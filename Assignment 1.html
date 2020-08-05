@@ -1,0 +1,83 @@
+<html><head></head>
+    
+    </head></html>
+
+<body>
+
+    <i> <h1  style="color:brown;">Personal Informaton</h1> </i>
+  
+   <div style="padding: 20px">
+
+            <input type="text" id="firstname" name="firstname" placeholder="firstame">
+            
+            <input type="text" id="lastname" name="Lastname" placeholder="lastname"><br/>
+
+            <input type="text" id="reg_email" name="reg_email" placeholder="reg_email"><br/>
+
+            <input type="number" id="Mobile Number" name="Mobile Number" placeholder="Mobile Number"><br/>
+
+            <input type="number" id="Age" value="" />
+
+            <button type="button"  onclick="login()">login</button>
+</div>
+           <p id="demo"></p>
+            <script>
+                function login()
+                {
+                    var firstname=document.getElementById("firstname").value;
+                    var lastname=document.getElementById("lastname").value;
+                    var reg_email=document.getElementById("reg_email").value;
+                    var MobileNumber=document.getElementById("Mobile Number").value;
+                    var Age=document.getElementById("Age").value;
+               
+                    if(firstname == "Prajwal") {
+                        console.log("Entered First Name Is Correct");
+                        console.log("FirstName:  " + firstname);
+                        
+                
+                    }else{
+                        console.log("Entered Wrong First Name")
+                    }
+                    if(lastname == "JV") {
+                        console.log("Entered last Name Is Correct");
+                        console.log("LastName:  " + lastname);
+                        
+                
+                    }else{
+                        console.log("Entered Wrong last Name")
+                    }
+                    if(reg_email == "batch@gmail.com") {
+                        console.log("Entered email Is Correct");
+                        console.log("reg_email:  " + reg_email);
+                        
+                
+                    }else{
+                        console.log("please enter correct email")
+                    }
+                    if(MobileNumber == "9999988888") {
+                        console.log("Entered mobile number Is Correct");
+                        console.log("MobileNumber:  " + MobileNumber);
+                        
+                
+                    }else{
+                        console.log("please enter correct mobile number")
+                    }
+
+                    if(Age < 18) {
+                        console.log("younger");
+                      
+                      }
+                     
+                      if(Age > 18) {
+                        console.log("Elder");
+                      }  
+
+                    if(firstname == "Prajwal" && lastname == "JV" && reg_email == "batch@gmail.com" && MobileNumber == "9999988888") {
+                        console.log("Created successfully");
+                       
+                
+                    }else{
+                        console.log("entered credentials are wrong")
+                    }
+                }
+                </script>

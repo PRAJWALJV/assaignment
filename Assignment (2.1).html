@@ -1,0 +1,123 @@
+<html><head></head>
+    
+    </head></html>
+
+<body>
+
+    <i> <h1  style="color:brown;">Personal Informaton</h1> </i>
+  
+   <div style="padding: 20px">
+
+            <input type="text" id="firstname" name="firstname" placeholder="firstame">
+            
+            <input type="text" id="lastname" name="Lastname" placeholder="lastname"><br/>
+           
+            <input type="text" id="Email" name="Email" placeholder="Email"><br/>
+
+            <input type="text or number" id="Password" name="Password" placeholder="Password">
+
+            <input type="text or number" id="ConfirmPassword" name="ConfirmPassword" placeholder="ConfirmPassword"><br/>
+
+            <input type="number" id="Age" value="" />
+
+            <button type="button"  onclick="Createaccount()">Createaccount</button></br>
+
+            
+
+            
+
+  </select>
+           <p id="demo"></p>
+            <script>
+                function Createaccount()
+                {
+                    var firstname=document.getElementById("firstname").value;
+                    var lastname=document.getElementById("lastname").value;
+                    var Email=document.getElementById("Email").value;
+                    var Password=document.getElementById("Password").value;
+                    var ConfirmPassword=document.getElementById("ConfirmPassword").value;
+                    var Age=document.getElementById("Age").value;
+                    
+                    if(firstname == "Prajwal") {
+                        console.log("Entered First Name Is Correct");
+                        console.log("FirstName:  " + firstname);
+                        
+                
+                    }else{
+                        console.log("Entered Wrong First Name")
+                    }
+                    if(lastname == "JV") {
+                        console.log("Entered last Name Is Correct");
+                        console.log("LastName:  " + lastname);
+                        
+                
+                    }else{
+                        console.log("Entered Wrong last Name")
+                    }
+                    if(Email == "batch@gmail.com") {
+                        console.log("Entered email Is Correct");
+                        console.log("Email:  " + Email);
+
+                         }else{
+                        console.log("please enter correct email")
+                    }
+                    if(Password == "12345") {
+                        console.log("Entered First Name Is Correct");
+                        console.log("Password:  " + Password);
+                        
+                
+                    }else{
+                        console.log("Entered Wrong Password")
+                    }
+                    if(ConfirmPassword == "12345") {
+                        console.log("Entered Confirm password Is Correct");
+                        console.log("ConfirmPassword:  " + ConfirmPassword);
+                        
+                
+                    }else{
+                        console.log("Entered password is not same")
+
+                    }
+
+                    if(Age < 18) {
+                        console.log("younger");
+                      
+                      }
+                      if(Age > 18 && Age <50) {
+                        console.log("mediator");
+
+                    
+                      }
+                      if(Age > 50) {
+                        console.log("Elder");
+                      }  
+                
+                    if(firstname == "Prajwal" && lastname == "JV" && Email == "batch@gmail.com" && Password == "12345" && ConfirmPassword == "12345") {
+                        console.log("Created successfully");
+                       
+                
+                    }else{
+                        console.log("entered credentials are wrong")
+                    
+            
+                    }
+                }
+                </script>
+
+                
+                  <body>
+                  <select id="mySelect" size="1">
+                      <option>Select</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      
+                    </select>               
+                  <p id="demo"></p>
+
+                  <script>
+                  function myFunction() {
+                    var x = document.getElementById("mySelect").options.length;
+                    document.getElementById("demo").innerHTML = "Found " + x + " options in the list.";
+                  }
+                  </script>
+                  </body>
