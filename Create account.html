@@ -1,0 +1,133 @@
+<html><head></head>
+    
+    </head></html>
+
+<body>
+
+    <i> <h1  style="color:brown;">Personal Informaton</h1> </i>
+  
+   <div style="border-radius: 12px; padding: 12px;">
+
+            <input  type="text" id="firstname" name="firstname" placeholder="firstame">
+            
+            <input type="text" id="lastname" name="Lastname" placeholder="lastname"><br/></br>
+           
+            <input type="text" id="Email" name="Email" placeholder="Email"><br/><br/>
+
+            <input type="text or number" id="Password" name="Password" placeholder="Password">
+
+            <input type="text or number" id="ConfirmPassword" name="ConfirmPassword" placeholder="ConfirmPassword"><br/><br/>
+
+            <input type="number" id="Age" value="" placeholder="Age"/>
+
+
+            
+
+            
+
+  </select>
+           <p id="demo"></p>
+            <script>
+                function Createaccount()
+                {
+                    var firstname=document.getElementById("firstname").value;
+                    var lastname=document.getElementById("lastname").value;
+                    var Email=document.getElementById("Email").value;
+                    var Password=document.getElementById("Password").value;
+                    var ConfirmPassword=document.getElementById("ConfirmPassword").value;
+                    var Age=document.getElementById("Age").value;
+                    
+                    if(firstname == "Prajwal") {
+                        console.log("Entered First Name Is Correct");
+                        console.log("FirstName:  " + firstname);
+                        
+                
+                    }else{
+                        console.log("Entered Wrong First Name")
+                    }
+                    if(lastname == "JV") {
+                        console.log("Entered last Name Is Correct");
+                        console.log("LastName:  " + lastname);
+                        
+                
+                    }else{
+                        console.log("Entered Wrong last Name")
+                    }
+                    if(Email == "batch@gmail.com") {
+                        console.log("Entered email Is Correct");
+                        console.log("Email:  " + Email);
+
+                         }else{
+                        console.log("please enter correct email")
+                    }
+                    if(Password == "12345") {
+                        console.log("Entered First Name Is Correct");
+                        console.log("Password:  " + Password);
+                        
+                
+                    }else{
+                        console.log("Entered Wrong Password")
+                    }
+                    if(ConfirmPassword == "12345") {
+                        console.log("Entered Confirm password Is Correct");
+                        console.log("ConfirmPassword:  " + ConfirmPassword);
+                        
+                
+                    }else{
+                        console.log("Entered password is not same")
+
+                    }
+
+                    if(Age < 18) {
+                        console.log("younger");
+                      
+                      }
+                      if(Age > 18 && Age <50) {
+                        console.log("mediator");
+
+                    
+                      }
+                      if(Age > 50) {
+                        console.log("Elder");
+                      }  
+                
+                    if(firstname == "Prajwal" && lastname == "JV" && Email == "batch@gmail.com" && Password == "12345" && ConfirmPassword == "12345") {
+                        console.log("Created successfully");
+                       
+                
+                    }else{
+                        console.log("entered credentials are wrong")
+                    
+            
+                    }
+                }
+                </script>
+
+                
+                 
+
+                  <form action="/action_page.php">
+                    <h3>Please select your gender:</h3>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                  </br>
+                
+<h3>Hobby of playing </h3></br>
+                    <form action="/action_page.php">
+                        <input type="checkbox" id="Game1" name="Game1" value="Cricket">
+                        <label for="Game1"> Cricket</label><br>
+                        <input type="checkbox" id="Game2" name="Game2" value="Football">
+                        <label for="Game2"> Football</label><br>
+                        <input type="checkbox" id="Game3" name="Game3" value="Kabaddi">
+                        <label for="Game3"> Kabaddi</label><br>
+                        <input type="checkbox" id="Game4" name="Game4" value="Kho-Kho">
+                        <label for="Game4"> Kho-Kho</label><br><br>
+                       
+                    </form>
+
+                      
+            <button style="color: white; background-color: green; border: none; font-size: 30px; border-radius: 12px;" type="button"  onclick="Createaccount()">Createaccount</button></br>

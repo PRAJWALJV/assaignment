@@ -1,0 +1,45 @@
+
+<head></head>
+
+<i> <h1  style="color:brown;">Login page</h1> </i>
+</head> 
+<div style="padding: 20px"> 
+<body>
+<input type="text" id="Username" name="User name" placeholder="User name"> </br>
+
+<input type="text or number" id="Password" name="Password" placeholder="Password"><br>
+
+
+<button style="color: red; background-color: rgb(215, 221, 240); border: none; margin: 8px 4px; font-size: 18px;" type="button"  onclick="login()">login</button></br>
+</div>
+</body>
+
+<p id="demo"></p>
+            <script>
+                function login()
+                {
+                    var Username=document.getElementById("Username").value;
+                    var Password=document.getElementById("Password").value;
+
+
+                    if(Username == "Prajwal") {
+                        console.log("Entered User name Is Correct");
+                        console.log("Username:  " + Username);
+                        
+                
+                    }else{
+                        console.log("Entered Wrong User name")
+                    }
+
+                    
+                    if(Username == "Prajwal"  && Password == "12345" ) {
+                        console.log("Login successfully");
+                       
+                
+                    }else{
+                        console.log("entered credentials are wrong")
+                    
+            
+                    }
+                }
+            </script>
